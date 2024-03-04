@@ -1,0 +1,65 @@
+{
+  "id": "9e124f2a-3830-47e1-aed5-f404325fea8e",
+  "version": "2.0",
+  "name": "microsoft",
+  "url": "https://www.federalregister.gov",
+  "tests": [{
+    "id": "07789414-aa6a-4efc-ae57-72390a0319d8",
+    "name": "shortest",
+    "commands": [{
+      "id": "35f71b64-9c14-4d88-90c7-bbce9238c2f0",
+      "comment": "",
+      "command": "open",
+      "target": "/documents/2024/03/01/2024-04117/foreign-boards-of-trade",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e04045bc-79f5-4a27-ad22-90827ab0b7ba",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "816x860",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "45248562-c108-4156-ad13-2644c4c994a4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=PDF",
+      "targets": [
+        ["linkText=PDF", "linkText"],
+        ["css=.metadata_list > dd:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'PDF')]", "xpath:link"],
+        ["xpath=//div[@id='main']/div[4]/div/div/div[2]/div/div/div/div[2]/dl/dd/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.govinfo.gov/content/pkg/FR-2024-03-01/pdf/2024-04117.pdf')]", "xpath:href"],
+        ["xpath=//dd/a", "xpath:position"],
+        ["xpath=//a[contains(.,'PDF')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b60e159-b98f-4339-9d5f-8a5e9e6e26d6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Print this document",
+      "targets": [
+        ["linkText=Print this document", "linkText"],
+        ["css=.open a", "css:finder"],
+        ["xpath=//a[contains(text(),'Print this document')]", "xpath:link"],
+        ["xpath=//div[@id='main']/div[4]/div/div/div[2]/div[3]/div/div/ul/li[7]/div/div[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#print')]", "xpath:href"],
+        ["xpath=//li[7]/div/div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Print this document')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8e4e338b-f787-4916-b5c5-8cef716b3f84",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["07789414-aa6a-4efc-ae57-72390a0319d8"]
+  }],
+  "urls": ["https://www.federalregister.gov/"],
+  "plugins": []
+}
